@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matriculas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="contenedor">
+        
+    <form action="http://moralo.atwebpages.com/patrones/matricula/InsertarMatricula.php" method="POST">
+
+        <!--nombre-->
+        <label for="IdAlumno">IdAlumno
+            <input type="text" name="IdAlumno" id="IdAlumno">
+        </label>
+        <label for="nombre">Nombre:
+            <input type="text" autofocus name="nombre" id="nombre" placeholder="nombre">
+        </label>
+        <!--correo-->
+        <label for="correo">Correo:
+            <input type="email" name="correo" id="correo" placeholder="correo@gmail.com">
+        </label>
+        <!--boton de validar
+
+        <input type="button" value="boton">
+        -->
+
+        <!--AGRUPACION DE CHEQUEO-->
+        <fieldset>
+            <legend>Módulos</legend>
+
+            <label>DIW<input type="checkbox" value="DIW" name="modulo[]" id="DIW"></label>
+            <label>DWEC<input type="checkbox" value="DWEC" name="modulo[]" id="DWEC"></label>
+            <label>Servidores<input type="checkbox" value="Servidores" name="modulo[]" id="Servidores"></label>
+            <label>DWES<input type="checkbox" value="DWES" name="modulo[]" id="DWES"></label>
+        </fieldset>
+
+        <!--color
+        <label for="color">color:
+            <input type="color"  value="#FF0000" name="color" id="color">
+        </label>
+
+        
+        <label for="fecha">fecha:
+            <input type="date" name="fecha" id="fecha">
+        </label>
+
+        
+        <label for="file">File:
+            <input type="file" name="file" name="file" id="file">
+        </label>
+
+       
+        
+            <label for="rango">
+                <input type="range" name="rango" name="rango" id="rango">
+            </label>
+        -->  
+       
+        
+
+        <!--+agrupacion de botones radio-->
+        <fieldset>
+            <legend>Ciclo</legend>
+            <label>dam<input type="radio" name="ciclo" id="dam"></label>
+            <label>daw<input type="radio" name="ciclo" id="daw"></label>
+            <label>asir<input type="radio" name="ciclo" id="asir"></label>
+            <label>smr<input type="radio" name="ciclo" id="smr"></label>
+        </fieldset>
+
+        <!--agrupacion de horarios e ies-->
+        <fieldset>
+            <legend>Horarios</legend>
+            <label>Turnos</label>
+            <select name="turno" size="1">
+                <option>Mañana</option>
+                <option>Vespertino</option>
+                <option>Nocturno</option>
+                <option>Online</option>
+            </select>
+
+            <label>IES</label>
+            <select name="ies" size="1">
+                <optgroup label="Albalat">
+                    <option>Sanitario</option>
+                    <option>Protésico</option>
+                </optgroup>
+                <optgroup label="Augustobriga">
+                    <option>Informática</option>
+                    <option>Comunicaciones</option>
+                </optgroup>
+                <optgroup label="Zurbarán">
+                    <option>Electrónica</option>
+                    <option>Admon</option>
+                </optgroup>
+            </select>    
+            
+        </fieldset>
+
+        <!--agrupacion de botones de validar-->
+        <fieldset>
+            <legend>Botones de acción</legend>
+            <input type="hidden" value="ocultar" name="hidden">
+            <input class="btnAccion" type="submit" value="Enviar" name="aceptar">
+        <input  class="btnAccion" type="reset" value="Limpiar" name="reset">  
+        </fieldset>
+
+
+
+    </form>
+</div>
+    
+</body>
+</label>
