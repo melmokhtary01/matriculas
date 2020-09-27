@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>matriculas</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../estilos/estilo.css">
+    <link rel="shortcut icon" href="../iconos/insertar.ico" type="image/x-icon">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#header").load("../menu.html"); 
+      $("#footer").load("../footer.html"); 
+    });
+    </script> 
+
 </head>
+
+
 <body>
+    <div id="header"></div>
     <div class="contenedor">
         
     <form action="http://moralo.atwebpages.com/patrones/matricula/InsertarMatricula.php" method="POST">
@@ -22,11 +39,7 @@
         <label for="correo">Correo:
             <input type="email" name="correo" id="correo" placeholder="correo@gmail.com">
         </label>
-        <!--boton de validar
-
-        <input type="button" value="boton">
-        -->
-
+  
         <!--AGRUPACION DE CHEQUEO-->
         <fieldset>
             <legend>Módulos</legend>
@@ -36,28 +49,6 @@
             <label>Servidores<input type="checkbox" value="Servidores" name="modulo[]" id="Servidores"></label>
             <label>DWES<input type="checkbox" value="DWES" name="modulo[]" id="DWES"></label>
         </fieldset>
-
-        <!--color
-        <label for="color">color:
-            <input type="color"  value="#FF0000" name="color" id="color">
-        </label>
-
-        
-        <label for="fecha">fecha:
-            <input type="date" name="fecha" id="fecha">
-        </label>
-
-        
-        <label for="file">File:
-            <input type="file" name="file" name="file" id="file">
-        </label>
-
-       
-        
-            <label for="rango">
-                <input type="range" name="rango" name="rango" id="rango">
-            </label>
-        -->  
        
         
 
@@ -102,15 +93,13 @@
         <!--agrupacion de botones de validar-->
         <fieldset>
             <legend>Botones de acción</legend>
-            <input type="hidden" value="ocultar" name="hidden">
+            < type="hidden" value="ocultar" name="hidden">
             <input class="btnAccion" type="submit" value="Enviar" name="aceptar">
         <input  class="btnAccion" type="reset" value="Limpiar" name="reset">  
         </fieldset>
 
-
-
     </form>
-</div>
-    
+    </div>
+    <div id="footer"></div>
 </body>
-</label>
+</html>
